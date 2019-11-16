@@ -1,4 +1,4 @@
-###Java版本编译
+### Java版本编译
 下载protoc-gen-grpc-java插件
 https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.25.0/
 ```
@@ -10,7 +10,7 @@ protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java 
 ```
 
 
-###Golang版本编译
+### Golang版本编译
 
 ```
 protoc --proto_path=$GOPATH/src:. --micro_out=. --go_out=. *.proto
