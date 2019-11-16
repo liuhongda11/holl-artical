@@ -8,6 +8,10 @@ protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java 
 protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java \
   --grpc-java_out=lite:"$OUTPUT_FILE" --proto_path="$DIR_OF_PROTO_FILE" "$PROTO_FILE"
 ```
+```
+实例
+protoc --plugin=protoc-gen-grpc-java=/Users/kunpeng/protoc-gen-grpc-java.exe --grpc-java_out=. --proto_path=. *.proto
+```
 
 
 ### Golang版本编译
